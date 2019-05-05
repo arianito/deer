@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+		"outDir": "./build",
+        "target": "es5",
+        "module": "commonjs",
+        "allowJs": false,
+        "esModuleInterop": true,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "sourceMap": false,
+        "downlevelIteration": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+		"isolatedModules": false,
+        "experimentalDecorators": true,
+
+        "jsx": "react",
+        "baseUrl": ".",
+        "paths": {
+			"@core/*": [
+				"src/core/*"
+			],
+			"@ui/*": [
+				"src/ui/*"
+			]
+        },
+        "lib": [
+            "dom",
+            "es2015",
+            "es2016.array.include",
+            "es6"
+        ]
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "build/",
+        "dist/",
+        "node_modules/"
+    ]
+}
