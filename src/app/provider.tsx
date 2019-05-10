@@ -1,19 +1,15 @@
 import React from 'react';
-import {HookModel} from "ssrstore";
-import {Application} from "./Application";
-import {ModulatedProvider} from "xrmodule";
+import {Application} from "./application";
+import {BeanFactory, HookBean} from "jobean";
 
 
-export const Provider = ModulatedProvider([
-
-])({
+export const Provider = BeanFactory.provider({
 	id: 'app',
 	rtl: false,
-	ssr: true,
+	useSSR: true,
 	app: <Application/>,
-	models: [
-		HookModel,
-	],
+	jars: [],
+	beans: [HookBean],
 	middleware: [],
 	head: (state) => {
 		return <React.Fragment>

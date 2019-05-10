@@ -14,7 +14,6 @@
         "emitDecoratorMetadata": true,
 		"isolatedModules": false,
         "experimentalDecorators": true,
-
         "jsx": "react",
         "baseUrl": ".",
         "paths": {
@@ -33,9 +32,12 @@
         ]
     },
     "include": [
-        "./src/**/*"
+        "src/**/*"
     ],
     "exclude": [
+		"test.config.ts",
+		"__tests__/",
+		"/**/*.test.*",
         "build/",
         "dist/",
         "node_modules/"

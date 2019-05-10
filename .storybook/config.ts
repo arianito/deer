@@ -1,5 +1,5 @@
 import { configure } from '@storybook/react';
-import {AxiosHttpDriver} from "../src/app/AxiosHttpDriver";
+import {AxiosHttpDriver} from "../src/app/simpleHttpDriver";
 import {Http} from "homing.web.core.http";
 const req = require.context('./', true, /\.story\.tsx$/);
 
